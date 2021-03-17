@@ -1,0 +1,14 @@
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.csprojAssemblyReference.cache
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.Form1.resources
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.Properties.Resources.resources
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.csproj.GenerateResource.cache
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.csproj.CoreCompileInputs.cache
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\bin\Debug\VeritabaniProjesi.exe.config
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\bin\Debug\VeritabaniProjesi.exe
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\bin\Debug\VeritabaniProjesi.pdb
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.exe
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.pdb
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.Form2.resources
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.Form3.resources
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.Form4.resources
+C:\Users\mehtap uğur\source\repos\VeritabaniProjesi\obj\Debug\VeritabaniProjesi.Form5.resources
