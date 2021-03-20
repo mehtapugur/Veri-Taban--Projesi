@@ -188,20 +188,15 @@ namespace VeritabaniProjesi
             while (verioku.Read())
             {
                 numb = Convert.ToInt32(verioku["fiyat"]);
-
             }
            
-             al.Dispose();
+            al.Dispose();
             verioku.Close();
             //numb fiyat bilgisi
-            sum = numb * mktr;    
-            
+            sum = numb * mktr;            
             bagla.Close();
-
             mesafe();  
-
             top = sum + karg;
-
             textBox6.Text = top.ToString();
         }
 
@@ -237,7 +232,6 @@ namespace VeritabaniProjesi
             SqlDataAdapter sd = new SqlDataAdapter("select hammadde, miktar, fiyat from Tbhammadde where hammadde = '" + comboBox2.SelectedItem.ToString() + "' AND  firmaID = '" + comboBox3.SelectedItem.ToString() + "'", bagla);
             DataTable tt = new DataTable();
             sd.Fill(tt);
-            //dataGridView2.Rows.Clear();
             foreach(DataRow item in tt.Rows)
             {
                 int n = dataGridView2.Rows.Add();
@@ -264,13 +258,11 @@ namespace VeritabaniProjesi
             xy.Dispose();
             verioku.Close();
 
-
             //stokları güncelle
             SqlCommand cmd = new SqlCommand(); //komut yazmamız için
             cmd.Connection = bagla;
             //mktr = kullanıcı kaç tane almak istiyor
             yeni = nb - mktr;
-            //yeni = 1;
             if (mktr < nb) //tedarikcinin hammadde tablosunu günceller
             {
                 cmd.CommandText = "Update Tbhammadde Set miktar = '" + yeni.ToString() + "' where hammadde = '" + comboBox2.SelectedItem.ToString() + "' AND  firmaID = '" + comboBox3.SelectedItem.ToString() + "'";
@@ -285,7 +277,6 @@ namespace VeritabaniProjesi
             }
 
             // üreticinin hammadde tablosuna ekleme yapar
-            //cmd.CommandText = "INSERT INTO Tbhammaddeler(hammadde,stokdurumu) VALUES('" + comboBox2.SelectedItem.ToString() + "', '" + int.Parse (textBox4.Text) + "')";
             cmd.CommandText = "INSERT INTO Tbhammaddeler(hammadde,stokdurumu) VALUES('" + comboBox2.SelectedItem.ToString() + "', '" + textBox4.Text + "')";
             cmd.ExecuteNonQuery();
             cmd.Dispose();
@@ -296,8 +287,6 @@ namespace VeritabaniProjesi
             comboBox3.Text = string.Empty;
             textBox4.Clear();
             textBox6.Clear();
-
         }
-
     }
 }
