@@ -40,7 +40,6 @@ namespace VeritabaniProjesi
             cmn.ExecuteNonQuery();
 
             bag.Close();
-
         }
     }
 }
