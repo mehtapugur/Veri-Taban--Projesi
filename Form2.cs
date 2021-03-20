@@ -62,9 +62,7 @@ namespace VeritabaniProjesi
             {
                 comboBox1.Items.Add(dy["kimyasal"].ToString());
             }
-
             baglan.Close();
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -83,7 +81,6 @@ namespace VeritabaniProjesi
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //comboBox1.Items.Clear();
             baglan.Open();
             SqlCommand com = baglan.CreateCommand();
             com.CommandType = CommandType.Text;
@@ -95,8 +92,7 @@ namespace VeritabaniProjesi
             foreach (DataRow dy in td.Rows)
             {
                 textBox2.Text = dy["stok"].ToString();
-            }
-            
+            }            
             baglan.Close();
         }
         public static int sayi;
@@ -114,7 +110,6 @@ namespace VeritabaniProjesi
             while (verioku.Read())
             {
                 stk = Convert.ToInt32(verioku["stok"]); //üretici stoklarındaki bileşik durumu
-
             }
 
             if(sayi <= stk)
@@ -129,8 +124,6 @@ namespace VeritabaniProjesi
             compare.Dispose();
             verioku.Close();
             baglan.Close();
-            
-           // textBox4.Text = 
         }
 
         private void Button2_Click(object sender, EventArgs e)
