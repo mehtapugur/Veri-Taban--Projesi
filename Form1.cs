@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-
 namespace VeritabaniProjesi
 {
     public partial class Form1 : Form
@@ -41,9 +40,7 @@ namespace VeritabaniProjesi
             {
                 comboBox1.Items.Add(dr["musteriadi"].ToString());
             }
-
             baglanti.Close();
-
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -106,9 +103,7 @@ namespace VeritabaniProjesi
                 textBox4.Text = dr["musteriadi"].ToString();
                 textBox5.Text = dr["adres"].ToString();
             }
-
             baglanti.Close();
         }
     }
-    }
-
+}
